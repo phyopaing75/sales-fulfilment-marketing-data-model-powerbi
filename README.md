@@ -214,7 +214,7 @@ SUMX(dim_campaign,
         DATESBETWEEN(dim_date[Date], dim_campaign[start_date], dim_campaign[end_date])))
 ```
 
-## Opening the model
+## How to open the model
 
 1. Open `data_modeling_project.pbix` in Power BI Desktop.
 2. The queries point to the original file location. Go to Transform data > Data source settings > Change Source and select your local copy of `dataset.xlsx`.
@@ -225,5 +225,3 @@ SUMX(dim_campaign,
 
 - Add charts to the dashboard: monthly sales against target as a line chart, sales by region, and a fulfilment page for shipping, invoicing and payment times.
 - Add slicers for year, region and product category so the cards and table can be filtered.
-- Use `exchange_rates` to add currency conversion. It is staged but not yet used by the model.
-- Use `invoice_lines` for product-level billing analysis. It is staged but not yet used by the model.
